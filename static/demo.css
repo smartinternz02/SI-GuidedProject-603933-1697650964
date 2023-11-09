@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/wp4047763.jpg');
+    background-size: cover;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#videoContainer {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#outputContainer {
+    width: 60%;
+    height: 40%;
+    border: 1px solid #fff;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#message {
+    margin: 0;
+}
+
+#speakButton {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#speakButton:hover {
+    background-color: #a00;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/wp4047763.jpg');
+    background-size: cover;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#videoContainer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #fff;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#outputContainer {
+    width: 80%;
+    height: 20%;
+    border: 1px solid #fff;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#message {
+    margin: 0;
+}
+
+#speakButton {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#speakButton:hover {
+    background-color: #a00;
+}
