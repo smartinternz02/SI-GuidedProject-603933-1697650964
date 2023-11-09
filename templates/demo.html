@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASL Alphabet Image Recognition</title>
+  <link rel="stylesheet" type="text/css" href="\static\demo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+  <script>
+  window.onload = function() {
+    var socket = io.connect('http://' + document.domain + ':' + location.port);
+    socket.on('connect', function() {
+        console.log('Connected!');
+    });
+    socket.on('message', function(msg) {
+        document.getElementById('message').innerHTML = msg;
+    });
+
+    // Add event listener to the "Speak" button
+    document.getElementById('speakButton').addEventListener('click', function() {
+        // Get the message from the paragraph with id 'message'
+        var message = document.getElementById('message').innerHTML;
+
+        // Create a new SpeechSynthesisUtterance object with the message
+        var utterance = new SpeechSynthesisUtterance(message);
+
+        // Pass the utterance to speechSynthesis.speak()
+        window.speechSynthesis.speak(utterance);
+    });
+  }
+  </script>
+</head>
+<body>
+  <div id="videoContainer">
+      <img src="{{ url_for('video_feed') }}" id="video">
+  </div>
+  <div id="outputContainer">
+      <p id="message"></p>
+      <button id="speakButton">Speak</button>
+  </div>
+</body>
+</html>
+
